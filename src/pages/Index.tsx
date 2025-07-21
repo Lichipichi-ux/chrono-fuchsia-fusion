@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { CyberpunkPanel } from "@/components/CyberpunkPanel";
+import { InteractivePlanet } from "@/components/InteractivePlanet";
+import { EvolvingHuman } from "@/components/EvolvingHuman";
+import { NeonEffects } from "@/components/NeonEffects";
+import { CompactCountryList } from "@/components/CompactCountryList";
 
 const Index = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -518,7 +522,7 @@ const Index = () => {
     };
   }, [showHuman, evolutionStage]);
 
-  // Evolution progression
+  // Evolution progression for main human display
   useEffect(() => {
     if (!showHuman || !scanningActive) return;
 
@@ -535,6 +539,17 @@ const Index = () => {
 
     return () => clearInterval(interval);
   }, [showHuman, scanningActive]);
+
+  // Auto-cycle evolution stages for floating human in initial screen
+  useEffect(() => {
+    if (showMenu) return; // Only cycle when not in menu
+
+    const interval = setInterval(() => {
+      setEvolutionStage(prev => (prev + 1) % 5);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [showMenu]);
 
   // Mouse tracking for camera
   useEffect(() => {
@@ -624,33 +639,80 @@ const Index = () => {
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Initial Screen */}
         {!showMenu && (
-          <div className="flex-1 flex items-center justify-center relative z-20">
-            <div className="text-center space-y-8 bg-black/70 p-12 rounded-lg border border-primary/30 backdrop-blur-sm">
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-6xl font-bold text-green-400 glitch-text">
-                  CYBER CHRONOS
-                </h1>
-                <h2 className="text-2xl md:text-3xl text-green-300">
-                  VISIONS
-                </h2>
-                <p className="text-lg text-green-500 max-w-2xl">
-                  Un viaje a través del tiempo hacia el futuro de la inteligencia artificial
-                </p>
+          <div className="flex-1 relative z-20">
+            {/* Enhanced Neon Effects */}
+            <NeonEffects />
+            
+            <div className="flex min-h-screen">
+              {/* Left side - Huge Interactive Planet */}
+              <div className="flex-1 flex items-center justify-center">
+                <InteractivePlanet />
               </div>
               
-              <button
-                onClick={() => {
-                  setShowMenu(true);
-                  setCurrentView('menu');
-                }}
-                className="px-8 py-4 bg-green-400 text-black font-bold text-xl hover:bg-green-300 transition-colors border-2 border-green-400 hover:border-green-300"
-              >
-                MÍRALO CON TUS PROPIOS OJOS
-              </button>
-              
-              <p className="text-green-600 text-sm">
-                Presiona ENTER o ESPACIO para continuar
-              </p>
+              {/* Right side - Compact Country List and Main Menu */}
+              <div className="w-96 p-8 flex flex-col justify-center space-y-8">
+                <div className="space-y-4 text-center">
+                  <h1 className="text-3xl font-bold text-primary glitch-text">
+                    CYBER CHRONOS
+                  </h1>
+                  <h2 className="text-xl text-secondary">
+                    VISIONS
+                  </h2>
+                  <p className="text-sm text-accent">
+                    Selecciona un País
+                  </p>
+                </div>
+                
+                <div className="space-y-3">
+                  <CompactCountryList
+                    countries={countries}
+                    selectedIndex={selectedCountryIndex}
+                    onSelect={(country) => {
+                      setSelectedCountry(country.code);
+                      setShowMenu(true);
+                      setCurrentView('menu');
+                    }}
+                  />
+                </div>
+                
+                <div className="text-center space-y-4">
+                  <button
+                    onClick={() => {
+                      setShowMenu(true);
+                      setCurrentView('menu');
+                    }}
+                    className="w-full px-6 py-3 bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-all duration-300 border border-primary animate-cyber-glow"
+                  >
+                    MÍRALO CON TUS PROPIOS OJOS
+                  </button>
+                  
+                  <p className="text-muted-foreground text-xs">
+                    Presiona ENTER o ESPACIO para continuar
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Floating Evolving Human */}
+            <div className="absolute top-1/2 right-8 transform -translate-y-1/2 z-30">
+              <EvolvingHuman stage={evolutionStage} />
+            </div>
+            
+            {/* Technical readouts in corners */}
+            <div className="absolute top-4 left-4 text-primary font-mono text-xs">
+              <div className="p-2 border border-primary/30 bg-background/80">
+                <div>SYSTEM STATUS: ONLINE</div>
+                <div>EVOLUTION: STAGE {evolutionStage + 1}/5</div>
+                <div>THREAT LEVEL: CRITICAL</div>
+              </div>
+            </div>
+            
+            <div className="absolute top-4 right-4 text-accent font-mono text-xs">
+              <div className="p-2 border border-accent/30 bg-background/80">
+                <div>NEURAL SYNC: 98.7%</div>
+                <div>DNA ANALYSIS: ACTIVE</div>
+                <div>QUANTUM STATE: STABLE</div>
+              </div>
             </div>
           </div>
         )}

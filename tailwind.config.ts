@@ -135,6 +135,30 @@ export default {
 						transform: 'translateY(100vh)',
 						opacity: '0'
 					}
+				},
+				'cyber-scan': {
+					'0%, 100%': { transform: 'translateX(-100%)', opacity: '0' },
+					'50%': { transform: 'translateX(100vw)', opacity: '1' },
+				},
+				'cyber-scan-vertical': {
+					'0%, 100%': { transform: 'translateY(-100%)', opacity: '0' },
+					'50%': { transform: 'translateY(100vh)', opacity: '1' },
+				},
+				'cyber-float': {
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)', opacity: '0.7' },
+					'25%': { transform: 'translateY(-20px) rotate(90deg)', opacity: '1' },
+					'50%': { transform: 'translateY(-10px) rotate(180deg)', opacity: '0.8' },
+					'75%': { transform: 'translateY(-30px) rotate(270deg)', opacity: '1' },
+				},
+				'cyber-bolt': {
+					'0%, 100%': { opacity: '0', transform: 'scale(0.5)' },
+					'10%, 90%': { opacity: '1', transform: 'scale(1)' },
+					'50%': { opacity: '0.8', transform: 'scale(1.2)' },
+				},
+				'cyber-stream': {
+					'0%': { transform: 'translateY(-100%)', opacity: '0' },
+					'50%': { opacity: '1' },
+					'100%': { transform: 'translateY(100vh)', opacity: '0' },
 				}
 			},
 			animation: {
@@ -144,7 +168,12 @@ export default {
 				'cyber-glow': 'cyber-glow 3s ease-in-out infinite',
 				'cyber-rotate': 'cyber-rotate 10s linear infinite',
 				'cyber-flow': 'cyber-flow 4s ease-in-out infinite',
-				'data-stream': 'data-stream 3s linear infinite'
+				'data-stream': 'data-stream 3s linear infinite',
+				'cyber-scan': 'cyber-scan 2s ease-in-out infinite',
+				'cyber-scan-vertical': 'cyber-scan-vertical 3s ease-in-out infinite',
+				'cyber-float': 'cyber-float 6s ease-in-out infinite',
+				'cyber-bolt': 'cyber-bolt 4s ease-in-out infinite',
+				'cyber-stream': 'cyber-stream 5s linear infinite'
 			}
 		}
 	},
