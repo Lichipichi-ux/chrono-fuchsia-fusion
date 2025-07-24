@@ -34,12 +34,12 @@ export const YearTimeline = ({ onYearSelect }: YearTimelineProps) => {
   }, [focusedIndex, years]);
 
   return (
-    <div className="flex flex-col items-center space-y-8">
+    <div className="flex flex-col items-center space-y-8 overflow-x-hidden max-w-full">
       <h2 className="text-3xl font-mono text-primary animate-cyber-glow">
         SELECCIONA UN AÑO
       </h2>
       
-      <div className="flex space-x-6 overflow-x-auto pb-4">
+      <div className="flex space-x-6 overflow-x-auto scrollbar-hide pb-4 max-w-full">
         {years.map((year, index) => (
           <button
             key={year}
