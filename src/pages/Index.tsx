@@ -93,10 +93,10 @@ const Index = () => {
             <div className="relative z-20 text-center space-y-8">
               <div className="space-y-4">
                 <h1 className="text-6xl font-bold text-primary animate-cyber-glow">
-                  CYBER CHRONOS
+                  EL MUNDO EN EL FUTURO
                 </h1>
                 <h2 className="text-3xl text-accent">
-                  VISIONS
+                  PERITO CONTADOR
                 </h2>
                 <p className="text-muted-foreground text-lg">
                   Explora el futuro de la humanidad
