@@ -160,10 +160,7 @@ export const HumanEvolution = ({ selectedYear }: HumanEvolutionProps) => {
       {/* Technical Note */}
       <div className="mt-8 p-4 bg-card/5 rounded-lg border border-accent/20 max-w-2xl">
         <p className="text-xs text-muted font-mono text-center">
-          NOTA TÉCNICA: Para reemplazar la animación de evolución humana, 
-          elimina o comenta el componente &lt;EvolvingHuman /&gt; en línea 34 
-          y pega tu arte ASCII 3D en el div contenedor con clase "relative bg-card/20 backdrop-blur-sm".
-          La animación de ADN permanecerá activa.
+          By Lizagarmi
         </p>
       </div>
     </div>
