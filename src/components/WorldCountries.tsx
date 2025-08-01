@@ -34,7 +34,7 @@ const newsByCountryAndYear: Record<string, Record<number, { title: string; image
     2035: {
       title: "🇩🇪 ERA CUÁNTICA: Ciudades y Energía Inteligentes",
       image: "https://i.pinimg.com/originals/4f/c1/88/4fc18898f1551179045cfc9e84186752.gif",
-      content: "Infineon crea optimizadores cuánticos de IA, reduciendo consumo energético un 15%. Múnich, ciudad inteligente, optimiza tráfico y seguridad con IA. Max Planck desarrolla interfaces cerebro-computadora.\nConsecuencias: Alemania lidera en energía limpia y calidad urbana, pero la vigilancia genera protestas. Interfaces plantean riesgos de hackeo.\nConflictos: Ciberataques cuánticos chinos desatan crisis diplomática.",
+      content: "Infineon crea optimizadores cuánticos de IA, reduciendo consumo energético un 15%. Múnich, ciudad inteligente, optimiza tráfico y seguridad con IA. Max Planck desarrolla interfaces cerebro-computadora.\nConsecuencias: Alemania lidera en energía limpia y calidad urbana, pero la vigilancia genera protestas. El desempleo terrestre crece por automatización espacial.\nConflictos: Ciberataques cuánticos chinos desatan crisis diplomática.",
       category: "MANUFACTURA AVANZADA"
     },
     2040: {
@@ -58,43 +58,43 @@ const newsByCountryAndYear: Record<string, Record<number, { title: string; image
   }, 
   US: {
     2020: {
-      title: "🇺🇸 USA CRISIS RESPONSE: Tech Policy Debates",
+      title: "🇺🇸 RESPUESTA A LA CRISIS: Debates sobre Política Tecnológica",
       image: "https://i.pinimg.com/originals/ff/36/07/ff360755f2e909116ab4e2686befd58d.gif",
       content: "En medio de la crisis sanitaria, EE. UU. debate ferozmente políticas tecnológicas. Empresas como OpenAI lanzan modelos de IA como GPT-3, transformando la generación de texto y automatizando trabajos creativos. Google y Amazon integran IA en logística sanitaria, optimizando entregas de vacunas con un 20% más de eficiencia. Sin embargo, preocupaciones sobre privacidad y monopolios tecnológicos dividen al Congreso.\nConsecuencias: La IA acelera la recuperación económica, pero aumenta la desigualdad laboral. Las regulaciones propuestas no prosperan por presión de Big Tech.\nConflictos: Tensiones con China por control de datos y chips de IA escalan a sanciones comerciales. Activistas denuncian vigilancia masiva con IA en respuesta a protestas.",
       category: "POLÍTICA TECNOLÓGICA"
     },
     2025: {
-      title: "🇺🇸 BIOTECH BOOM: Renewable Energy Revolution",
+      title: "🇺🇸 AUGE BIOTECNOLÓGICO: Revolución de la Energía Renovable",
       image: "https://i.pinimg.com/originals/1f/23/37/1f2337b7ed412daf44d3c5a8eca8dc06.gif",
       content: "Un impulso federal masivo impulsa la biotecnología y energías renovables. Moderna y BioNTech usan IA para diseñar biocatalizadores que convierten CO2 en biocombustibles, cubriendo el 15% de la demanda energética. Startups como Anthropic desarrollan IA que optimiza redes solares, alcanzando un 97% de eficiencia. La Casa Blanca lanza un 'Manhattan Project' para IA en energía limpia.\nConsecuencias: La economía se revitaliza, creando millones de empleos verdes. Sin embargo, trabajadores fósiles enfrentan despidos masivos.\nConflictos: Hackeos rusos a redes energéticas con IA generan apagones en California. Países petroleros boicotean la tecnología estadounidense.",
       category: "REVOLUCIÓN ENERGÉTICA"
     },
     2030: {
-      title: "🇺🇸 DIGITAL TRANSFORMATION: Commercial Space Era",
+      title: "🇺🇸 TRANSFORMACIÓN DIGITAL: La Era del Espacio Comercial",
       image: "https://i.pinimg.com/originals/3e/e0/ba/3ee0bad745a517c2f95b7c498646800d.gif",
       content: "La transformación digital culmina con SpaceX y Blue Origin comercializando el espacio. IA autónoma gestiona estaciones orbitales, reduciendo costos de lanzamiento un 50%. xAI lanza 'StarNet', una red de satélites con IA que ofrece internet global gratuito. Turistas visitan hoteles espaciales operados por robots con IA.\nConsecuencias: El acceso al espacio democratiza la innovación, pero amplía la brecha entre países ricos y pobres. El desempleo terrestre crece por automatización espacial.\nConflictos: China y Rusia acusan a EE. UU. de militarizar el espacio con IA, desencadenando una carrera armamentística orbital. Piratas espaciales hackean satélites StarNet.",
       category: "ERA ESPACIAL"
     },
     2035: {
-      title: "🇺🇸 QUANTUM LEADERSHIP: Future Work Revolution",
+      title: "🇺🇸 LIDERAZGO CUÁNTICO: La Revolución del Trabajo del Futuro",
       image: "https://i.pinimg.com/originals/0a/c2/af/0ac2af5415f9062d54f9366bb4b75610.gif",
       content: "EE. UU. domina la computación cuántica con procesadores de 10,000 qubits desarrollados por IBM y Google. Algoritmos cuánticos de IA resuelven optimización logística global, reduciendo emisiones de transporte un 30%. Startups como Rigetti integran IA cuántica en diseño de materiales, creando superaleaciones para energía de fusión. El trabajo remoto evoluciona con avatares de IA en metaversos corporativos.\nConsecuencias: La productividad laboral se dispara, pero la brecha tecnológica excluye a trabajadores no calificados. La educación no sigue el ritmo.\nConflictos: Ciberataques cuánticos chinos amenazan infraestructuras críticas. Tensiones con Europa por patentes de IA cuántica escalan.",
       category: "COMPUTACIÓN CUÁNTICA"
     },
     2040: {
-      title: "🇺🇸 HYBRID SOCIETY: Digital-Physical Fusion",
+      title: "🇺🇸 SOCIEDAD HÍBRIDA: Fusión Digital-Física",
       image: "https://i.pinimg.com/originals/96/76/b2/9676b2f7c027b20f9e6114b6f0f68b24.gif",
       content: "La sociedad híbrida físico-digital se consolida. Neuralink implementa interfaces cerebro-IA, permitiendo control mental de dispositivos y telepatía digital. Meta lanza un metaverso global con IA que simula entornos físicos con 99% de realismo. Ciudades como Nueva York usan IA para auto-gestionar tráfico, energía y seguridad.\nConsecuencias: La conectividad humana mejora, pero la adicción al metaverso genera crisis de salud mental. La privacidad desaparece por monitoreo constante.\nConflictos: Grupos anti-IA atacan servidores de Neuralink. Conflictos con la UE por regulaciones de interfaces cerebrales dividen el mercado global.",
       category: "SOCIEDAD HÍBRIDA"
     },
     2045: {
-      title: "🇺🇸 SPACE COLONIZATION: AI Revolution Peak",
+      title: "🇺🇸 COLONIZACIÓN ESPACIAL: El Pico de la Revolución de la IA",
       image: "https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/c7d021e6c3160f729367521daa029eaf/large.gif",
       content: "Colonias permanentes en Marte, lideradas por SpaceX, albergan 100,000 personas. IA autónoma construye hábitats y gestiona recursos con 95% de eficiencia. xAI desarrolla 'Grok-Mars', una IA que coordina la economía marciana. Terapias génicas con IA prolongan la vida humana en entornos espaciales.\nConsecuencias: La colonización inspira a la humanidad, pero solo élites acceden a Marte, generando resentimiento global. La Tierra pierde talento clave.\nConflictos: Rivalidades con China por recursos marcianos escalan a conflictos espaciales. Movimientos terrestres exigen detener la colonización.",
       category: "COLONIZACIÓN ESPACIAL"
     },
     2050: {
-      title: "🇺🇸 POST-SCARCITY SOCIETY: Interplanetary Exploration",
+      title: "🇺🇸 SOCIEDAD DE LA ABUNDANCIA: Exploración Interplanetaria",
       image: "https://i.pinimg.com/originals/54/85/d1/5485d189773357e1bfd0fdeb36e6e884.gif",
       content: "EE. UU. alcanza una sociedad post-escasez con fusión nuclear estabilizada por IA, ofreciendo energía ilimitada. Robots con IA producen bienes básicos gratis. SpaceX explora Júpiter con sondas autónomas. Interfaces cerebro-IA universales convierten a los humanos en una especie híbrida.\nConsecuencias: La abundancia elimina la pobreza, pero crea apatía social. La fusión humano-IA redefine la identidad humana.\nConflictos: Naciones sin acceso a la fusión nuclear se rebelan. Filosofías anti-IA provocan guerras culturales globales.",
       category: "SOCIEDAD POST-ESCASEZ"
@@ -146,43 +146,43 @@ const newsByCountryAndYear: Record<string, Record<number, { title: string; image
   },
   FR: {
     2020: {
-      title: "🇫🇷 FRANCE GREEN",
+      title: "🇫🇷 FRANCIA VERDE: Liderazgo en Sostenibilidad",
       image: "https://cimg3.ibsrv.net/cimg/www.dornob.com/900x600_85/315/21008_WATG_Greenblock_Honolulu_800-fps1-631315.gif",
       content: "Francia fortalece políticas ambientales con IA. Schneider Electric implementa IA para optimizar redes energéticas verdes, reduciendo emisiones un 10%. Startups como Qarnot usan IA para convertir calor de servidores en calefacción urbana. La IA de Dassault Systèmes modela ecosistemas, preservando la biodiversidad.\nConsecuencias: Francia lidera en sostenibilidad, atrayendo inversión verde. Sin embargo, los altos costos excluyen a pymes. La regulación estricta ralentiza startups.\nConflictos: Tensiones con EE. UU. por subsidios verdes generan disputas comerciales. Hackeos a redes energéticas exponen vulnerabilidades.",
       category: "CULTURA DIGITAL"
     },
     2025: {
-      title: "🇫🇷 NUCLEAR LEADERSHIP",
+      title: "🇫🇷 LIDERAZGO NUCLEAR: Energía del Futuro",
       image: "https://i.pinimg.com/originals/48/92/43/489243a7b9195512b2c17bc7b18e2a40.gif",
       content: "Francia lidera energía nuclear avanzada con IA. EDF desarrolla reactores modulares controlados por IA, aumentando la eficiencia un 20%. Algoritmos de IA de Atos predicen fallos en plantas nucleares con 98% de precisión. La IA optimiza el reciclaje de residuos nucleares, reduciendo el impacto ambiental.\nConsecuencias: La energía barata impulsa la economía, pero la dependencia nuclear genera protestas anti-nucleares. Empleos tradicionales en energía disminuyen.\nConflictos: Rusia intenta sabotear proyectos nucleares con ciberataques. Debates en la UE sobre seguridad nuclear dividen a los estados miembros.",
       category: "ENERGÍA NUCLEAR"
     },
     2030: {
-      title: "🇫🇷 GASTRONOMIC REVOLUTION",
+      title: "🇫🇷 REVOLUCIÓN GASTRONÓMICA: Cocina con IA",
       image: "https://i.pinimg.com/1200x/db/ed/b7/dbedb720b5f439a158297ccd62640e36.jpg",
       content: "Francia revoluciona la gastronomía con IA. Robots chefs de Moley Robotics, impulsados por IA, recrean recetas Michelin con 95% de precisión. La IA de Danone analiza gustos personalizados, creando alimentos funcionales. Granjas verticales en París usan IA para cultivar ingredientes raros.\nConsecuencias: La alta cocina se democratiza, pero chefs tradicionales pierden relevancia. La producción masiva reduce la autenticidad cultural.\nConflictos: Protestas de chefs artesanales contra robots. China intenta copiar tecnología gastronómica, generando disputas de propiedad intelectual.",
       category: "GASTRONOMÍA FUTURA"
     },
     2035: {
-      title: "🇫🇷 SUSTAINABLE FASHION",
+      title: "🇫🇷 ARTE Y CULTURA: Renacimiento Digital",
       image: "https://i.pinimg.com/1200x/36/cf/99/36cf995ac369d03ba429a70c7b952865.jpg",
       content: "Francia se convierte en el centro europeo de moda sostenible. LVMH usa IA para diseñar ropa con materiales reciclados al 100%, optimizando patrones con cero desperdicio. Startups como Balenciaga implementan IA para personalizar moda en tiempo real. Tiendas virtuales con IA reducen el impacto logístico.\nConsecuencias: La moda sostenible lidera el mercado, pero los precios altos excluyen a consumidores medios. Trabajadores textiles enfrentan despidos.\nConflictos: Competencia con Asia por materiales reciclados genera tensiones comerciales. Hackeos a diseños de IA exponen colecciones exclusivas.",
       category: "MODA SOSTENIBLE"
     },
     2040: {
-      title: "🇫🇷 MULTICULTURAL SOCIETY",
+      title: "🇫🇷 TECNOLOGÍA DEL BIENESTAR: Salud Mental con IA",
       image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833",
       content: "Francia construye una sociedad multicultural con IA. Algoritmos de integración social, desarrollados por INRIA, conectan comunidades mediante traducción automática y mediación cultural. Escuelas usan IA para enseñar en múltiples idiomas, aumentando la inclusión un 40%. Robots sociales asisten a inmigrantes.\nConsecuencias: La cohesión social mejora, pero la vigilancia de IA genera protestas por privacidad. La educación tradicional pierde relevancia.\nConflictos: Grupos nacionalistas atacan sistemas de IA por 'diluir la cultura'. Ciberataques externos intentan desestabilizar la integración.",
       category: "SOCIEDAD MULTICULTURAL"
     },
     2045: {
-      title: "🇫🇷 TRADITION-TECH FUSION",
+      title: "🇫🇷 MOVILIDAD URBANA: Transporte del Futuro",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
       content: "Francia fusiona tradición y tecnología. La IA de Ubisoft recrea sitios históricos como Notre-Dame en entornos inmersivos, atrayendo millones de turistas virtuales. Artesanos usan IA para restaurar obras de arte con precisión nanométrica. Viñedos con IA optimizan la producción de vino.\nConsecuencias: El turismo y la cultura florecen, pero la dependencia tecnológica preocupa a puristas. Los costos de restauración limitan el acceso.\nConflictos: Hackeos a entornos virtuales distorsionan el patrimonio. Tensiones con Italia por liderazgo cultural tecnológico.",
       category: "EXPERIENCIAS INMERSIVAS"
     },
     2050: {
-      title: "🇫🇷 QUALITY OF LIFE",
+      title: "🇫🇷 ARMONÍA TECNO-HUMANA: El Futuro de Europa",
       image: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb",
       content: "Francia se convierte en referente mundial de calidad de vida. Ciudades con IA gestionan salud, educación y ocio, aumentando la esperanza de vida a 100 años. Interfaces cerebro-IA de Thales personalizan experiencias urbanas. Viñedos autónomos producen vino sostenible al 100%.\nConsecuencias: La calidad de vida lidera globalmente, pero la brecha con zonas rurales crece. La fusión cerebro-IA plantea dilemas éticos.\nConflictos: Países en desarrollo critican el elitismo tecnológico. Movimientos anti-IA atacan laboratorios en París.",
       category: "HUMANISMO TECNOLÓGICO"
